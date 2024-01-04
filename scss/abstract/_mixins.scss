@@ -1,0 +1,15 @@
+@mixin font($family: null, $size: null, $weight: null, $style: null, $lh: null) {
+    @if ($family) { font-family: $family; }
+    @if ($size) { font-size: $size; }
+    @if ($weight) { font-weight: $weight; }
+    @if ($style) { font-style: $style; }
+    @if ($lh) { line-height: $lh; }
+}
+
+@mixin flex($display: flex, $direction: null, $jc: null, $ai: null) {
+    display: $display;
+
+    @if ($direction) { flex-direction: $direction; }
+    @if ($jc) { justify-content: $jc; }
+    @if ($ai) { align-items: $ai; }
+}

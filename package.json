@@ -1,0 +1,11 @@
+{
+  "name": "coffee-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tocss": "sass -w ./scss/main.scss style.css"
+  },
+  "author": "alxkptlv",
+  "license": "ISC"
+}
