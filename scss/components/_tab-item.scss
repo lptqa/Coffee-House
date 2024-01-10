@@ -1,0 +1,57 @@
+.tab-item {
+    border: 1px solid $tab-item-border;
+    padding: 7px 15px 7px 7px;
+    background-color: transparent;
+    border-radius: 100px;
+    transition: 500ms ease-out;
+
+    &__content {
+        @include flex($ai: center);
+        @extend %button-text;
+
+        column-gap: 8px;
+    }
+
+    &__icon {
+        @include flex($jc: center, $ai: center);
+        
+        color: $tab-item-text;
+        width: 30px;
+        height: 30px;
+        background: center no-repeat $tab-item-border;
+        border-radius: 50%;
+        transition: 500ms ease-out;
+    }
+
+    &__caption {
+        color: $tab-item-text;
+        transition: 500ms ease-out;
+    }
+}
+
+.tab-item--active,
+.tab-item:hover {
+    $bg-color: black;
+    border-color: $tab-item-border-active;
+    background-color: $tab-item-border-active;
+    
+    & .tab-item__icon {
+        background-color: $tab-item-text-active;
+    }
+
+    & .tab-item__caption {
+        color: $tab-item-text-active;
+    }
+}
+
+.tab-item--coffee .tab-item__icon {
+    background-image: url("../../asserts/images/icons/coffee.png");
+}
+
+.tab-item--tea .tab-item__icon {
+    background-image: url("../../asserts/images/icons/tea.png");
+}
+
+.tab-item--dessert .tab-item__icon {
+    background-image: url("../../asserts/images/icons/dessert.png");
+}

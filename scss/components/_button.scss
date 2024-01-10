@@ -1,0 +1,122 @@
+.button {
+    @include flex($display: inline-flex, $jc: center, $ai: center);
+
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 32px;
+
+    &__content {
+        @include flex($ai: center);
+
+        column-gap: 8px;
+    }
+
+    &__text {
+        @extend %button-text;
+    }
+}
+
+.button--secondary {
+    padding: 20px 78px;
+    width: 100%;
+    color: $button-text-dark;
+    background-color: $button-bg-light;
+
+    & .button__content {
+        position: relative;
+    }
+
+    & .button__icon {
+        position: absolute;
+        top: 50%;
+        right: -14px;
+        translate: 0 -50%;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        transition: 300ms ease-in;
+    }
+
+    & .button__text {
+        position: relative;
+        right: 0;
+        transition: 300ms ease-in;
+    }
+}
+
+.button--secondary:hover {
+    & .button__icon {
+        opacity: 1;
+    }
+
+    & .button__text {
+        right: 14px;
+    }
+}
+
+.button--small {
+    padding: 9px 77px;
+    max-width: 200px;
+    transition: 300ms ease-in;
+}
+
+.button--app {
+    padding: 11px 19px;
+    width: 200px;
+    justify-content: flex-start;
+    transition: 500ms ease-in;
+
+    & .button__content {
+        justify-content: flex-start;
+    }
+
+    & .button__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    & .button__text {
+        @include flex($direction: column);
+    }
+
+    & .button__text-topline {
+        @extend %caption;
+
+        margin-bottom: 2px;
+    }
+}
+
+.button--round {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 500ms ease-out;
+
+    & .button__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.button--dark {
+    border: 1px solid $button-border-dark;
+    color: $button-text-dark;
+}
+
+.button--dark:hover {
+    color: $button-text-light;
+    background-color: $button-bg-dark;
+}
+
+.button--light {
+    border: 1px solid $button-border-light;
+    color: $button-text-light;
+}
+
+.button--light:hover {
+    color: $button-text-dark;
+    border-color: $button-bg-light;
+    background-color: $button-bg-light;
+}

@@ -10,3 +10,31 @@ $color-light-md: #c1b6ad;
 $text-dark: $color-dark-xl;
 $text-light: $color-light-xl;
 $text-accent: $color-brown;
+$border-dark: $color-dark-lt;
+$border-light: $color-light-md;
+$background-dark: $color-dark-lt;
+$background-light: $color-light-xl;
+
+// Components
+$link-color: $text-dark;
+$contact-color: $text-light;
+
+$button-text-dark: $text-dark;
+$button-text-light: $text-light;
+$button-bg-dark: $background-dark;
+$button-bg-light: $background-light;
+$button-border-dark: $border-dark;
+$button-border-light: $border-light;
+
+$slide-text: $text-dark;
+
+$bullet-bg-dark: $border-dark;
+$bullet-bg-light: $border-light;
+
+$tab-item-border: $border-light;
+$tab-item-text: $text-dark;
+$tab-item-border-active: $border-dark;
+$tab-item-text-active: $text-light;
+
+$card-border: $border-light;
+$card-text: $text-dark;
