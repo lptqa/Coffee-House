@@ -1,0 +1,52 @@
+.card {
+    @include flex($display: inline-flex, $direction: column);
+
+    box-sizing: border-box;
+    border: 1px solid $card-border;
+    width: 310px;
+    border-radius: 40px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__imagebox {
+        position: relative;
+        padding: 100% 0 1px;
+    }
+
+    &__image {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: 0;
+        left: -1px;
+        background: center/109.7% no-repeat border-box;
+        border-radius: 40px;
+        transition: background-size 500ms ease-out;
+    }
+
+    &__content {
+        @include flex($direction: column, $jc: space-between);
+
+        padding: 20px 19px 19px;
+        flex-grow: 1;
+    }
+
+    &__info {
+        margin-bottom: 12px;
+    }
+
+    &__title,
+    &__cost {
+        @extend %heading-3;
+    }
+
+    &__description {
+        @extend %text;
+
+        margin-top: 12px;
+    }
+}
+
+.card:hover .card__image {
+    background-size: 100%;
+}

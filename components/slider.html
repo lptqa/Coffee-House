@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Slider</title>
+</head>
+<body style="padding: 0 40px;padding-top: 100px">
+    <div class="slider">
+        <div class="slider__container">
+            <div class="slider__buttons">
+                <button class="button button--round button--dark">
+                    <span class="button__content">
+                        <svg class="button__icon">
+                            <use href="../asserts/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </span>
+                </button>
+                <button class="button button--round button--dark">
+                    <span class="button__content">
+                        <svg class="button__icon">
+                            <use href="../asserts/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="slider__slides">
+                <div class="slide slider__slide">
+                    <div class="slide__container">
+                        <div class="slide__imagebox">
+                            <div class="slide__image"></div>
+                        </div>
+                        <div class="slide__content">
+                            <p class="slide__title">S’mores Frappuccino</p>
+                            <p class="slide__description">This new drink takes an espresso and mixes it with
+                                brown sugar and cinnamon before being topped with oat milk.</p>
+                            <p class="slide__cost">$5.50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slider__slide">
+                    <div class="slide__container">
+                        <div class="slide__imagebox">
+                            <div class="slide__image"></div>
+                        </div>
+                        <div class="slide__content">
+                            <p class="slide__title">Caramel Macchiato</p>
+                            <p class="slide__description">Fragrant and unique classic espresso with rich
+                                caramel-peanut syrup, with cream under whipped thick foam.</p>
+                            <p class="slide__cost">$5.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slider__slide">
+                    <div class="slide__container">
+                        <div class="slide__imagebox">
+                            <div class="slide__image"></div>
+                        </div>
+                        <div class="slide__content">
+                            <p class="slide__title">Ice coffee</p>
+                            <p class="slide__description">A popular summer drink that tones and invigorates.
+                                Prepared from coffee, milk and ice.</p>
+                            <p class="slide__cost">$4.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider__bullets">
+            <div class="bullet bullet--active"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+        </div>
+    </div>
+</body>
+</html>
