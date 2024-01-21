@@ -13,3 +13,16 @@
     @if ($jc) { justify-content: $jc; }
     @if ($ai) { align-items: $ai; }
 }
+
+
+@mixin breakpoint-sm {
+    @media (max-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin breakpoint-md {
+    @media (max-width: $breakpoint-md) {
+        @content;
+    }
+}

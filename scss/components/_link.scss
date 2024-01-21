@@ -7,8 +7,8 @@
     overflow: hidden;
 
     &__content {
-        @include flex($ai: center);
-
+        @include flex;
+        
         column-gap: 8px;
     }
 
@@ -34,11 +34,15 @@
     }
 }
 
-.link--active {
+.link:focus {
+    outline: none;
+}
+
+.link--inactive {
     pointer-events: none;
 }
 
-.link--active::after,
+.link--inactive::after,
 .link:hover::after {
     width: 100%;
 }
