@@ -1,0 +1,46 @@
+.header {
+    padding: 20px 0;
+    background-color: $background-light;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__logo,
+    &__logo-link {
+        display: flex;
+        width: 100px;
+        height: 60px;
+        pointer-events: none;
+    }
+
+    &__logo-link {
+        pointer-events: auto;
+    }
+
+    &__nav {
+        @include flex($ai: center);
+
+        flex-grow: 1;
+    }
+
+    &__list {
+        display: flex;
+
+        margin-left: auto;
+        column-gap: 40px;
+    }
+
+    &__list-item {
+        font-size: 0;
+    }
+
+    &__link {
+        margin-left: auto;
+        font-size: 0;
+    }
+}

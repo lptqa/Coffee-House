@@ -29,6 +29,10 @@
     }
 }
 
+.tab-item--active {
+    pointer-events: none;
+}
+
 .tab-item--active,
 .tab-item:hover {
     $bg-color: black;

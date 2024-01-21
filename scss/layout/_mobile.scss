@@ -1,0 +1,39 @@
+.mobile {
+    @extend %section-pt, %section-pb;
+
+    background-color: $background-light;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__wrapper {
+        @include flex($jc: space-between, $ai: center);
+    }
+
+    &__content {
+        color: $text-dark;
+        max-width: 630px;
+    }
+
+    &__title {
+        @extend %heading-2;
+    }
+
+    &__text {
+        @extend %text;
+
+        margin: 40px 0;
+    }
+
+    &__links {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__image {
+        width: 630px;
+        height: 630px;
+        background: url("../../asserts/images/background/mobile.png") center/100% no-repeat;
+    }
+}

@@ -1,0 +1,53 @@
+.footer {
+    @extend %section-pt;
+
+    padding-bottom: 40px;
+    background-color: $background-light;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__content {
+        @include flex($jc: space-between, $ai: center);
+
+        padding: 100px;
+        border-radius: 40px;
+        background-color: $background-dark;
+    }
+
+    &__col {
+        flex-basis: 530px;
+    }
+
+    &__title {
+        @extend %heading-2;
+        @include flex($direction: column);
+        
+        color: $text-light;
+    }
+
+    &__social {
+        @include flex;
+
+        margin-top: 40px;
+        column-gap: 12px;
+    }
+
+    &__subtitle {
+        @extend %heading-3;
+
+        color: $text-light;
+    }
+
+    &__contacts {
+        @include flex($direction: column);
+        
+        margin-top: 40px;
+        row-gap: 16px;
+    }
+
+    &__contact {
+        font-size: 0;
+    } 
+}

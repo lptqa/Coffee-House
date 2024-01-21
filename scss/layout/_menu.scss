@@ -1,0 +1,36 @@
+.menu {
+    @extend %section-pb;
+
+    background-color: $background-light;
+
+    &__containter {
+        @extend %container;
+    }
+
+    &__content,
+    &__wrapper {
+        @include flex($direction: column, $ai: center);
+
+        row-gap: 40px;
+    }
+
+    &__title {
+        @extend %heading-2;
+
+        max-width: 800px;
+        color: $text-dark;
+        text-align: center;
+    }
+
+    &__categories {
+        @include flex($ai: center);
+
+        column-gap: 16px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+.favorite {
+    @extend %section-pt, %section-pb;
+
+    background-color: $background-light;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__content {
+        @include flex($direction: column, $ai: center);
+
+        row-gap: 40px;
+    }
+
+    &__title {
+        @extend %heading-2;
+
+        color: $text-dark;
+    }
+}

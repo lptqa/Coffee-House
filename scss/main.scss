@@ -11,10 +11,23 @@
     "./base/base";
 
 // Layout
+@import
+    "./layout/header",
+    "./layout/enjoy",
+    "./layout/favorite",
+    "./layout/about",
+    "./layout/mobile",
+    "./layout/menu",
+    "./layout/footer";
+    
 // Components
 @import
     "./components/link",
     "./components/button",
     "./components/slide",
     "./components/bullet",
-    "./components/slider";
+    "./components/slider",
+    "./components/photo",
+    "./components/tab-item",
+    "./components/card",
+    "./components/contact";

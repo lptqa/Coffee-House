@@ -26,3 +26,13 @@ ul {
 li {
     list-style: none;
 }
+
+.accent {
+    @extend %accent;
+}
+
+.visually-hidden {
+    position: absolute;
+    pointer-events: none;
+    transform: scale(0);
+}

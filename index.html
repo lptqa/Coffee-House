@@ -8,6 +8,290 @@
     <title>Resource</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__content">
+                <h1 class="visually-hidden">Resource Coffee House</h1>
+                <a class="header__logo" href="#" tabindex="-1">
+                    <svg>
+                        <use href="./asserts/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="link" href="#favorite">
+                                <span class="link__content">
+                                    <span class="link__text">Favorite coffee</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="link" href="#about">
+                                <span class="link__content">
+                                    <span class="link__text">About</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="link" href="#mobile">
+                                <span class="link__content">
+                                    <span class="link__text">Mobile app</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="link" href="#contacts">
+                                <span class="link__content">
+                                    <span class="link__text">Contact us</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header__link">
+                        <a class="link" href="./menu.html">
+                            <span class="link__content">
+                                <span class="link__text">Menu</span>
+                                <svg class="link__icon">
+                                    <use href="./asserts/sprite.svg#cup"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="enjoy">
+            <div class="enjoy__container">
+                <div class="enjoy__wrapper">
+                    <div class="enjoy__background"></div>
+                    <div class="enjoy__content">
+                        <h2 class="enjoy__title"><span class="accent">Enjoy</span>
+                            premium coffee at our charming cafe</h2>
+                        <p class="enjoy__text">With its inviting atmosphere and delicious coffee options,
+                            the Coffee House Resource is a popular destination for coffee lovers and those
+                            seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                        <div class="enjoy__link">
+                            <a class="button button--secondary" href="./menu.html">
+                                <span class="button__content">
+                                    <svg class="button__icon">
+                                        <use href="./asserts/sprite.svg#cup"></use>
+                                    </svg>
+                                    <span class="button__text">Menu</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="favorite" id="favorite">
+            <div class="favorite__container">
+                <div class="favorite__content">
+                    <h2 class="favorite__title">Choose your
+                        <span class="accent">favorite</span> coffee</h2>
+                    <div class="slider">
+                        <div class="slider__container">
+                            <div class="slider__buttons">
+                                <button class="button button--round button--dark">
+                                    <span class="button__content">
+                                        <svg class="button__icon">
+                                            <use href="../asserts/sprite.svg#arrow-left"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="button button--round button--dark">
+                                    <span class="button__content">
+                                        <svg class="button__icon">
+                                            <use href="../asserts/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="slider__slides">
+                                <div class="slide slider__slide">
+                                    <div class="slide__container">
+                                        <div class="slide__imagebox">
+                                            <div class="slide__image"></div>
+                                        </div>
+                                        <div class="slide__content">
+                                            <p class="slide__title">S’mores Frappuccino</p>
+                                            <p class="slide__description">This new drink takes an espresso and mixes it with
+                                                brown sugar and cinnamon before being topped with oat milk.</p>
+                                            <p class="slide__cost">$5.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide slider__slide">
+                                    <div class="slide__container">
+                                        <div class="slide__imagebox">
+                                            <div class="slide__image"></div>
+                                        </div>
+                                        <div class="slide__content">
+                                            <p class="slide__title">Caramel Macchiato</p>
+                                            <p class="slide__description">Fragrant and unique classic espresso with rich
+                                                caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                            <p class="slide__cost">$5.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide slider__slide">
+                                    <div class="slide__container">
+                                        <div class="slide__imagebox">
+                                            <div class="slide__image"></div>
+                                        </div>
+                                        <div class="slide__content">
+                                            <p class="slide__title">Ice coffee</p>
+                                            <p class="slide__description">A popular summer drink that tones and invigorates.
+                                                Prepared from coffee, milk and ice.</p>
+                                            <p class="slide__cost">$4.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__bullets">
+                            <div class="bullet bullet--active"></div>
+                            <div class="bullet"></div>
+                            <div class="bullet"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="about__title">Resource is <span class="accent">the perfect and cozy place</span>
+                        where you can enjoy a variety of hot beverages, relax, catch up with friends,
+                        or get some work done.</h2>
+                    <div class="about__photos">
+                        <div class="about__col">
+                            <div class="photo" style="width: 100%; height: 590px;">
+                                <div class="photo__image" style="background-image: url('./asserts/images/about/about-1.jpg');"></div>
+                            </div>
+                            <div class="photo" style="width: 100%; height: 430px;">
+                                <div class="photo__image" style="background-image: url('./asserts/images/about/about-2.jpg');"></div>
+                            </div>
+                        </div>
+                        <div class="about__col">
+                            <div class="photo" style="width: 100%; height: 430px;">
+                                <div class="photo__image" style="background-image: url('./asserts/images/about/about-3.jpg');"></div>
+                            </div>
+                            <div class="photo" style="width: 100%; height: 590px;">
+                                <div class="photo__image" style="background-image: url('./asserts/images/about/about-4.jpg');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mobile" id="mobile">
+            <div class="mobile__container">
+                <div class="mobile__wrapper">
+                    <div class="mobile__content">
+                        <h2 class="mobile__title"><span class="accent">Download</span>
+                            our apps to start ordering</h2>
+                        <p class="mobile__text">Download the Resource app today and experience the
+                            comfort of ordering your favorite coffee from wherever you are</p>
+                        <div class="mobile__links">
+                            <a class="button button--dark button--app" href="#">
+                                <span class="button__content">
+                                    <svg class="button__icon">
+                                        <use href="./asserts/sprite.svg#apple"></use>
+                                    </svg>
+                                    <span class="button__text">
+                                        <span class="button__text-topline">Available on the</span>
+                                        App Store
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="button button--dark button--app" href="#">
+                                <span class="button__content">
+                                    <svg class="button__icon">
+                                        <use href="./asserts/sprite.svg#google"></use>
+                                    </svg>
+                                    <span class="button__text">
+                                        <span class="button__text-topline">Available on</span>
+                                        Google Play
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile__image"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__col">
+                    <h2 class="footer__title">Sip, Savor, Smile. <span class="accent">It’s coffee time!</span></h2>
+                    <div class="footer__social">
+                        <a class="button button--round button--light" href="">
+                            <span class="button__content">
+                                <svg class="button__icon">
+                                    <use href="./asserts/sprite.svg#twitter"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="button button--round button--light" href="">
+                            <span class="button__content">
+                                <svg class="button__icon">
+                                    <use href="./asserts/sprite.svg#instagram"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="button button--round button--light" href="">
+                            <span class="button__content">
+                                <svg class="button__icon">
+                                    <use href="./asserts/sprite.svg#facebook"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__subtitle">Contact us</h3>
+                    <ul class="footer__contacts">
+                        <li class="footer__contact">
+                            <a class="contact contact--link" target="_blank" href="https://www.google.com/maps/search/8558+Green+Rd,+LA">
+                                <span class="contact__content">
+                                    <span class="contact__text">8558 Green Rd.,&nbsp; LA</span>
+                                    <svg class="contact__icon">
+                                        <use href="./asserts/sprite.svg#pin"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer__contact">
+                            <a class="contact contact--link" href="tel:">
+                                <span class="contact__content">
+                                    <span class="contact__text">+1 (603) 555-0123</span>
+                                    <svg class="contact__icon">
+                                        <use href="./asserts/sprite.svg#phone"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer__contact">
+                            <div class="contact">
+                                <span class="contact__content">
+                                    <span class="contact__text">Mon-Sat: 9:00 AM – 23:00 PM</span>
+                                    <svg class="contact__icon">
+                                        <use href="./asserts/sprite.svg#clock"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
